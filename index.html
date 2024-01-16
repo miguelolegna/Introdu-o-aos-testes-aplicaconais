@@ -3,11 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Meu Título Grande</title>
+    <style>
+        body
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .card {
+            max-width: 600px; /* Largura dos cartões */
+            margin: 10px; /* Espaçamento entre os cartões */
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .large-card {
+            max-width: 1220px; /* Largura do cartão maior */
+            margin: 10px; /* Espaçamento entre os cartões */
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .card-header {
+            background-color: #3498db;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+        }
+
+        .card-body {
+            padding: 20px;
+        }
+    </style>
 </head>
 <body>
-    <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="1470" height="720" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FwFJgimLuxGtIjzEgHTksK6%2FFigma-basics%3Ftype%3Ddesign%26node-id%3D1669%253A162202%26mode%3Ddesign%26t%3DWYqVXAsYLHxwvoyP-1" allowfullscreen></iframe>
-<!-- teste de commit-->
+    <h1 style="font-size: 3em; text-align: center; color: #333;">Testes Aplicacionais</h1>
+  
+    <div class="card-container">
+        <div class="card">
+            <div class="card-header">
+                O que são testes aplicacionais?
+            </div>
+            <div class="card-body">
+                <h3><p>"Testes aplicacionais" são uma abordagem inicial para entender e aplicar testes em software ou aplicações. Essa prática é fundamental no desenvolvimento de software para garantir a qualidade, identificar falhas e assegurar que as aplicações atendam aos requisitos e expectativas dos usuários. A introdução aos testes aplicacionais abrange conceitos básicos, estratégias de teste, ferramentas e metodologias para avaliar a funcionalidade, desempenho, segurança e outros aspectos das aplicações. Essa introdução visa estabelecer uma base sólida para profissionais de desenvolvimento de software e testes, permitindo-lhes criar sistemas mais robustos e confiáveis.</p>
+            </div>
+        </div>
 
+        <div class="card">
+            <div class="card-header">
+                Como funciona os testes aplicacionais
+            </div>
+            <div class="card-body">
+                <h3><p>"testes aplicacionais" abrange os fundamentos e práticas essenciais relacionados aos testes de software. O processo envolve a avaliação sistemática de uma aplicação para garantir sua qualidade e conformidade com requisitos. Inclui a identificação de falhas, testes de funcionalidades, desempenho, segurança, entre outros aspectos. A introdução apresenta conceitos-chave, estratégias de teste, ferramentas e metodologias para proporcionar uma compreensão inicial aos profissionais de desenvolvimento e teste de software, ajudando-os a criar sistemas mais confiáveis e eficientes.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="card-container">
+        <div class="card">
+            <div class="card-header">
+                5 pontos positivos
+            </div>
+            <div class="card-body">
+                <h3><p>Garantia de Qualidade: As práticas de teste proporcionam maior confiabilidade, identificando e corrigindo defeitos antes que alcancem os usuários finais. </p>
+                <p>Melhoria Contínua: A introdução aos testes aplicacionais incentiva a revisão constante e aprimoramento do código, promovendo o desenvolvimento de software de alta qualidade.</p>
+                <p>Aumento da Confiança: Os testes ajudam a construir a confiança dos desenvolvedores e usuários, assegurando que a aplicação funcione conforme esperado. </p>
+                <p>Redução de Custos: Identificar e corrigir problemas durante as fases iniciais do desenvolvimento é mais econômico do que corrigi-los após a implementação. </p>
+                <p>Conformidade com Requisitos: Os testes garantem que a aplicação atenda aos requisitos estabelecidos, assegurando que ela cumpra sua finalidade pretendida.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                5 pontos negativos
+            </div>
+            <div class="card-body">
+                <h3><p>Custo Inicial: Implementar uma infraestrutura de teste e treinar a equipe pode exigir um investimento inicial significativo.</p>
+                <p>Tempo de Desenvolvimento Prolongado: A realização de testes rigorosos pode estender o tempo de desenvolvimento, especialmente se não houver uma estratégia eficiente.</p>
+                <p>Falsos Positivos/Negativos: Testes podem gerar resultados incorretos, exigindo uma análise cuidadosa para evitar a correção desnecessária ou negligência de problemas reais.</p>
+                <p>Complexidade: A introdução de práticas de teste pode adicionar complexidade ao processo de desenvolvimento, exigindo uma gestão eficaz para evitar obstáculos.</p>
+                <p>Falta de Cobertura Total: É desafiador testar todas as situações possíveis, e algumas falhas podem escapar, especialmente em projetos complexos, resultando em problemas não detectados.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="card-container">
+        <div class="large-card">
+            <div class="card-header">
+                A alguma outra maneira que seja mais eficaz que os testes aplicacionais
+            </div>
+            <div class="card-body">
+                <h3><p>Os testes aplicacionais são uma prática essencial para garantir a qualidade do software, mas não são a única abordagem para melhorar a eficácia no desenvolvimento. Além dos testes aplicacionais, algumas estratégias complementares podem ser adotadas para otimizar o processo de desenvolvimento de software: <br><br><br><p>Desenvolvimento Orientado a Testes (TDD): Nessa abordagem, os testes são escritos antes mesmo da implementação do código. Isso ajuda a definir claramente os requisitos e a funcionalidade esperada, promovendo um código mais modular e fácil de manter. <p>Integração Contínua (CI): A CI envolve a integração frequente do código desenvolvido pela equipe, com testes automáticos sendo executados sempre que uma alteração é feita no repositório. Isso ajuda a identificar rapidamente conflitos e falhas de integração.</p><p>Entrega Contínua (CD): Junto com a CI, a CD visa automatizar o processo de entrega do software ao ambiente de produção. Isso reduz o tempo entre o desenvolvimento e a disponibilidade do software, melhorando a eficiência e a agilidade.</p><p>Monitoramento em Produção: Implementar ferramentas de monitoramento contínuo permite acompanhar o desempenho e identificar problemas em tempo real. Isso contribui para uma resposta rápida a incidentes e aprimoramentos contínuos. <p>Revisões de Código (Code Reviews): Envolver outros membros da equipe na revisão do código pode identificar potenciais problemas, melhorar a consistência do código e proporcionar aprendizado mútuo. <p>Testes de Desempenho: Além dos testes funcionais, realizar testes de desempenho ajuda a identificar como o sistema se comporta sob diferentes cargas. Isso é crucial para garantir que a aplicação atenda aos requisitos de desempenho esperados. <p>Análise Estática de Código: Utilizar ferramentas de análise estática de código pode identificar possíveis problemas sem a necessidade de executar a aplicação. Isso pode ajudar a melhorar a consistência do código e a prevenir erros comuns.</p><p>Abordagens Ágeis e DevOps: Adotar práticas ágeis e metodologias DevOps integra desenvolvimento e operações, promovendo uma colaboração mais estreita e um ciclo de desenvolvimento mais rápido. <br><br><br>Não há uma única abordagem que seja universalmente mais eficaz; a combinação de diversas práticas é muitas vezes a chave para otimizar o processo de desenvolvimento de software. A escolha das estratégias dependerá do contexto, dos requisitos do projeto e da dinâmica da equipe.</p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
